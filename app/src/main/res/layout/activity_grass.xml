@@ -2,9 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".GrassActivity">
 
     <TextView
         android:id="@+id/textGroup"
@@ -15,7 +16,7 @@
         android:textSize="14sp"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_margin="40dp" />
+        android:layout_margin="10dp" />
 
     <TextView
         android:id="@+id/textFIO"
@@ -26,18 +27,22 @@
         android:textSize="14sp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="40dp" />
+        android:layout_margin="10dp" />
 
     <ImageView
-        android:layout_above="@+id/btn"
+        android:layout_above="@+id/textView"
         android:layout_below="@+id/textGroup"
         android:id="@+id/imageView"
+        android:src="@drawable/outline_grass_24"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <Button
-        android:id="@+id/btn"
-        android:text="Сделать снимок"
+    <TextView
+        android:id="@+id/textView"
+        android:text="Трава"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textFIO" />
